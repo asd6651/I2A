@@ -3,7 +3,7 @@
 
 ```mermaid
 flowchart TD
-  A[Start] --> B[Load PCB Board]
+  A([Start]) --> B[Load PCB Board]
   B --> C[Extract Netlist]
   C --> D[Initialize I2A Agent]
   D --> E[Build Net Order (Actor)]
@@ -16,7 +16,8 @@ flowchart TD
   J --> K
   K --> L[Update Model Training]
   L --> M{Converged?}
-  M -->|Yes| N[Done]
+  M -->|Yes| N([Done])
   M -->|No| E
 ```
+
 
